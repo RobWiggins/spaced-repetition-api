@@ -6,8 +6,17 @@ As a prospective user, you can register an account so that you can login and use
 
 The home dashboard shows your language, words to learn, and score for each word. The learning page asks you to input the translation of a word, which will subsequently give you feedback on whether you were correct. The words that you miss more frequently are shown more frequently. Upon mastery of each word, each word will get asked progressively less often.
 
-### Live Demo (front-end and back-end integrated link): https://spaced-repetition.michaelromero09.now.sh
+### Live Demo (front and backend): https://spacedrepetitionlearn.now.sh
 ### backend domain (for HTTP request purposes): https://spaced-rep-server1.herokuapp.com
+
+![Register page](https://github.com/RobertWiggins/spaced-repetition-client/blob/orphan-assets/screenshots/register.jpg "Register page")  
+  
+![Learning dashboard](https://github.com/RobertWiggins/spaced-repetition-client/blob/orphan-assets/screenshots/dashboard.jpg "learning dashboard")  
+  
+![Word translation question page](https://github.com/RobertWiggins/spaced-repetition-client/blob/orphan-assets/screenshots/apprende_word.jpg "Word translation question page")  
+  
+![Answer result feedback page](https://github.com/RobertWiggins/spaced-repetition-client/blob/orphan-assets/screenshots/answer_result.jpg "Answer result feedback page")  
+
 
 ## Getting Started
 These instructions will get you a copy of the front-end project up and running on your local machine for development and testing purposes. This client runs locally in conjunction with the Spaced-Repetition client, which can be found at https://github.com/thinkful-ei-dragonfly/spaced-repetition-api-rob-michaelR).
