@@ -76,7 +76,7 @@ languageRouter.route('/guess').post(bodyParser, async (req, res, next) => {
     words
   );
 
-  if (req.body.guess === wordList.head.value.translation) {
+  if (normalizeWord(req.body.guess) === normalizeWord(wordList.head.value.translation)) {
     wordList.head.value.correct_count++; // increase correct count for curr word
     wordList.head.value.memory_value =
       (wordList.head.value.memory_value * 2 >= wordList.listNodes().length
@@ -113,5 +113,9 @@ languageRouter.route('/guess').post(bodyParser, async (req, res, next) => {
     });
   }
 });
+
+function normalizeWord(word) {
+  return word.trim().toLowerCase();
+}
 
 module.exports = languageRouter;

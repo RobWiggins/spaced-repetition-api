@@ -13,7 +13,27 @@ const app = express()
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
   skip: () => NODE_ENV === 'test',
 }))
-app.use(cors())
+
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://spacedrepetitionlearn.vercel.app/',
+];
+
+app.use(
+  cors({
+    origin(origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+        return;
+      }
+
+      callback(new Error(`CORS blocked origin: ${origin}`));
+    },
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 app.use(helmet())
 
 app.use('/api/auth', authRouter)
