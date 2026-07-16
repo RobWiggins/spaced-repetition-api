@@ -1,6 +1,6 @@
 {
-  "name": "express-boilerplate",
-  "version": "0.0.1",
+  "name": "spaced-repetition-api",
+  "version": "1.2.1",
   "description": "",
   "main": "src/server.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "deploy": "git push heroku master"
   },
   "keywords": [],
-  "author": "Tom `tomatao` HT <tomht@thinkful.com>",
+  "author": "Robert Wiggins `RobWiggins` <wigginsro11@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
