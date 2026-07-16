@@ -16,7 +16,7 @@ app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
 
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://spacedrepetitionlearn.vercel.app/',
+  'https://spacedrepetitionlearn.vercel.app',
 ];
 
 app.use(
