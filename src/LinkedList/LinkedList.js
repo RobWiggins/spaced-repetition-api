@@ -143,7 +143,6 @@ class LinkedList {
   }
 
   map(callback) {
-    // TODO where to call?
     let node = this.head;
     let arr = [];
     while (node) {
